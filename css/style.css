@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+.main-header {
+    background-image: url(background-image.png);/*Adiciona imagem no fundo*/
+    background-position: 50% 39%;/*Alinha os elementos nos eixos x e y*/
+    display: flex;/*colocar elementos centralizados*/
+    flex-direction: column;/*alinha os elementos um embaixo do outro*/
+    align-items: center;/*centralizar os elementos*/
+}
+
+.main-nav {
+    width: 100%;/*Ocupar toda area disponivel*/
+    max-width: 600px;/*trava a largura maxima que definir para o projeto*/
+    padding:0 16px ;/*primeiro é cima e baixo ,segundo é esquerda e direita*/
+}
+
+.header-list-container {
+display: flex;/*Colocar os elementos na mesma linha*/
+justify-content: space-between;/*adiciona espaçamento entre os intens*/
+align-items: center;/*garatir que fiquem alinhados na mesma linha*/
+padding:16px 0;/*primeiro é cima e baixo ,segundo é esquerda e direita*/
+}
+
+.nav-item {
+    list-style-type: none;/*remove as bolinhas padrao dos elementos li*/
+    text-transform: uppercase;/*deixar todos as letras em maiusculo*/
+    color: #00008b;
+}
+
+hr {
+    width: 100%;/*Ocupar toda area disponivel*/
+}
+
+.nav-item a {
+    text-decoration: none;/*remove o urderline do ancoa */
+    color: inherit;/*herda a cor do elemento pai(neste caso é o nav-item)*/
+}
+
+.nav-item:hover {
+    color:rgba(0,0,139,0.7);/*quando passar o mouse trocar a cor/rgba passa a cor e no final*/
+    transition: 0.2s;
+}
