@@ -8,6 +8,20 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style-type: none;
+}
+/*criação de variedades no root do css*/
+:root {
+    --blue:#00008B;
+    --gray:#555555;
+    --skyblue:#00bfff;
+    --silver:#c0c0c0;
+    --red:#ff0000;
+    --white:#ffffff;
+    --dargray:#959595;
+}
+
 /*Header*/
 
 .main-header {
@@ -31,9 +45,8 @@ padding:16px 0;/*primeiro é cima e baixo ,segundo é esquerda e direita*/
 }
 
 .nav-item {
-    list-style-type: none;/*remove as bolinhas padrao dos elementos li*/
     text-transform: uppercase;/*deixar todos as letras em maiusculo*/
-    color: #00008b;
+    color: nav(-blue);
 }
 
 hr {
@@ -71,6 +84,47 @@ margin-bottom: 24px;
 .about-image {
     float: left;/*alinha a imagem esquerda e texto a direita*/
     margin: 0 20px 10px 0;/*0 topo,20 direita,10 baixo 0 esquerda*/
-    width: 200px;
-    height: auto;
+    /*diminuir o tamanho da imagem*/
+    width: 200px;/*largura*/
+    height: auto;/*evita a distraçao da imagem*/
+}
+
+.about-description {
+    color: var(--gray);/*utiliza variavel de cor criado no root*/
+    text-align: justify;/*justifica o texto*/
+}
+
+/*Footer*/
+
+.main-footer {
+    background-color: var(--skyblue);/*aplicar cor no fundo do rodape*/
+    padding: 15px 0;/*aplica espacamento cima/baixo e nada esquerda/direita*/
+}
+
+.main-footer-container {
+    display: flex;/*deixar tudo na mesma linha*/
+    align-items: center;/*alinha todos os elementos*/
+    justify-content: space-between;/*colar nome de um lado e lista de icones do outro*/
+}
+
+.title-smaller {
+    font-family: "Raleway",sans-serif;/*pegar a fonte importada*/
+    color: var(--blue);/*aplicar cor com a variavel criada no root do css*/
+    font-size: 26px;/*aumenta o tamanho da fonte*/
+}
+
+.list-container {
+    display: flex;/*deixar o elementos na mesma linha*/
+    align-items: center;/*alinhar todos elementos*/
+    justify-content: space-between;/*colocar o nome de um lado e os icones do outro*/
+}
+
+.footer-item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;/*aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
+}
+
+.footer-item + .footer-item {
+    margin-left: 16px;/*aplica na mesma class seguido em diante,ate chega*/
 }
