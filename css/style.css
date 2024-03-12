@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    fonte:400 22px "Roboto",sans-serif;
+}
+
 li {
     list-style-type: none;
 }
@@ -39,13 +43,13 @@ li {
 
 .header-list-container {
 display: flex;/*Colocar os elementos na mesma linha*/
-justify-content: space-between;/*adiciona espaçamento entre os intens*/
-align-items: center;/*garatir que fiquem alinhados na mesma linha*/
-padding:16px 0;/*primeiro é cima e baixo ,segundo é esquerda e direita*/
+justify-content: space-between;/*Adiciona espaçamento entre os intens*/
+align-items: center;/*Garatir que fiquem alinhados na mesma linha*/
+padding:16px 0;/*Primeiro é cima e baixo ,segundo é esquerda e direita*/
 }
 
 .nav-item {
-    text-transform: uppercase;/*deixar todos as letras em maiusculo*/
+    text-transform: uppercase;/*Deixar todos as letras em maiusculo*/
     color: nav(-blue);
 }
 
@@ -54,12 +58,12 @@ hr {
 }
 
 .nav-item a {
-    text-decoration: none;/*remove o urderline do ancoa */
-    color: inherit;/*herda a cor do elemento pai(neste caso é o nav-item)*/
+    text-decoration: none;/*Remove o urderline do ancoa */
+    color: inherit;/*Herda a cor do elemento pai(neste caso é o nav-item)*/
 }
 
 .nav-item:hover {
-    color:rgba(0,0,139,0.7);/*quando passar o mouse trocar a cor/rgba passa a cor e no final*/
+    color:rgba(0,0,139,0.7);/*Quando passar o mouse trocar a cor/rgba passa a cor e no final*/
     transition: 0.2s;
 }
 
@@ -68,63 +72,120 @@ hr {
 }
 
 .container {
-    max-width: 600px;/*trava a largura maxima que definimos para o projeto*/
-    padding: 0 16px;/*primeiro cima/baixo,segundo esquerda/direita*/
-    margin: 0 auto;/*nao plica cima/baixo,o auto distibui o maximo possivel para esquerda e direita*/
+    max-width: 600px;/*Trava a largura maxima que definimos para o projeto*/
+    padding: 0 16px;/*Primeiro cima/baixo,segundo esquerda/direita*/
+    margin: 0 auto;/*Nao plica cima/baixo,o auto distibui o maximo possivel para esquerda e direita*/
 }
 
-.about-title {
-font-family: "Raleway, sans-serif";/*pega afonte importada, caso ele nao encontre utilizada a sans-serif*/
-font-size: 32px;/*tamanho da fonte*/
+.title-median {
+font-family: "Raleway, sans-serif";/*Pega afonte importada, caso ele nao encontre utilizada a sans-serif*/
+font-size: 32px;/*Tamanho da fonte*/
 text-align: center;
 text-transform: uppercase;
 margin-bottom: 24px;
 }
 
 .about-image {
-    float: left;/*alinha a imagem esquerda e texto a direita*/
+    float: left;/*Alinha a imagem esquerda e texto a direita*/
     margin: 0 20px 10px 0;/*0 topo,20 direita,10 baixo 0 esquerda*/
-    /*diminuir o tamanho da imagem*/
-    width: 200px;/*largura*/
-    height: auto;/*evita a distraçao da imagem*/
+    /*Diminuir o tamanho da imagem*/
+    width: 200px;/*Largura*/
+    height: auto;/*Evita a distraçao da imagem*/
 }
 
 .about-description {
-    color: var(--gray);/*utiliza variavel de cor criado no root*/
-    text-align: justify;/*justifica o texto*/
+    color: var(--gray);/*Utiliza variavel de cor criado no root*/
+    text-align: justify;/*Justifica o texto*/
 }
 
 /*Footer*/
 
 .main-footer {
-    background-color: var(--skyblue);/*aplicar cor no fundo do rodape*/
-    padding: 15px 0;/*aplica espacamento cima/baixo e nada esquerda/direita*/
+    background-color: var(--skyblue);/*Aplicar cor no fundo do rodape*/
+    padding: 15px 0;/*Aplica espacamento cima/baixo e nada esquerda/direita*/
 }
 
-.main-footer-container {
-    display: flex;/*deixar tudo na mesma linha*/
-    align-items: center;/*alinha todos os elementos*/
-    justify-content: space-between;/*colar nome de um lado e lista de icones do outro*/
+.footer-container {
+    display: flex;/*Deixar tudo na mesma linha*/
+    align-items: center;/*Alinha todos os elementos*/
+    justify-content: space-between;/*Colar nome de um lado e lista de icones do outro*/
 }
 
 .title-smaller {
-    font-family: "Raleway",sans-serif;/*pegar a fonte importada*/
-    color: var(--blue);/*aplicar cor com a variavel criada no root do css*/
-    font-size: 26px;/*aumenta o tamanho da fonte*/
-}
-
-.list-container {
-    display: flex;/*deixar o elementos na mesma linha*/
-    align-items: center;/*alinhar todos elementos*/
-    justify-content: space-between;/*colocar o nome de um lado e os icones do outro*/
+    font-family: "Raleway",sans-serif;/*Pegar a fonte importada*/
+    color: var(--blue);/*Aplicar cor com a variavel criada no root do css*/
+    font-size: 26px;/*Aumenta o tamanho da fonte*/
 }
 
 .footer-item {
     width: 50px;
     height: 50px;
-    padding: 15px 0;/*aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
+    padding: 15px 0;/*Aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
 }
 
 .footer-item + .footer-item {
-    margin-left: 16px;/*aplica na mesma class seguido em diante,ate chega*/
+    margin-left: 16px;/*Aplica na mesma class seguido em diante,ate chega*/
+}
+
+/*contato*/
+.contact-text {
+text-align: center;/*Centralizar o texto*/
+margin-bottom: 30px;/*Separa o paragrafo */
+font-size: 28px;/*altera o tamanho da fonte*/
+color: var(--gray);
+}
+
+.contact {
+    background-color: var(--skyblue);
+    padding: 30px;/*Espaçamento*/
+    max-width: 600px;/*tamanho definido para o projeto*/
+    margin-right: auto;/*Empurra para direita*/
+    margin-left: auto;/*Empurra para esquerda*/
+    margin-bottom: 20px;/*Espaçamento para baixo*/
+}
+
+.contact-label {
+    display: block;/*Coloca os elementos um em cima do outro */
+    margin-bottom: 20px;/*espacamento para baixo*/
+    color: var(--blue);/*Altera a cor da fonte*/
+}
+
+.contact-field {
+    display: block;/*Coloca os elementos um em cima do outro*/
+    width: 100%;/*ocupa o espaço maximo disponivel*/
+    height: 30px;/*Aumenta a altura do campo*/
+    font-size: 16px;/*Altera o tamnho da fonte*/
+    padding-left: 10px;/*Empurra o elemento dentro do campo para esquerda*/
+    border: none;/*remove a borda*/
+}
+
+.contact-field:focus {/*troca acor do fundo do formulario ao clicar*/
+    background-color: var(--silver);/*Cor do fundo*/
+    outline: none;/*remove a linha interna do campo do formulario*/
+}
+
+textarea.contact-field {
+    height: 150px;/*Altera a altura do campo*/
+    padding: 10px;/*dar espaçamento em todas as direçoes*/
+    font-family: "Roboto", calibri;/*utiliza fonte importada,caso não encontra*/
+}
+
+.button-form {
+background-color: var(--blue);/*Cor do fundo do botao*/
+color: var(--white);/*cor da fonte do botao*/
+border: 2px solid var(--blue);
+border-radius: 10px;
+padding: 2px 6px;
+font-weight: bold;
+}
+.button-form:hover {
+    background-color: var(--white);/*Cor do fundo do botao*/
+    color: var(--white);/*cor da fonte do botao*/
+}
+
+.contact-maps {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
 }

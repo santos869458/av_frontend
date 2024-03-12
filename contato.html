@@ -21,112 +21,110 @@
     <!--Area do Site-->
     <body>
 
-        <!--Cabeçalho-->
-        <header>
+         <!--Cabeçalho-->
+         <header class="main-header">
 
             <!--Navegação-->
-            <nav>
+            <nav class="main-nav container">
 
                 <!--Lista não ordenada-->
-                <ul>
+                <ul class="header-list-container">
 
                     <!--Intem na lista-->
-                    <li><!--Logotipo do Site-->
+                    <li class="nav-item"><!--Logotipo do Site-->
                         <a href="index.html">
                             <img src="images/logo.png" alt="logo" height="100" width="100">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="nav-item">
                         <a href="loja.html">Loja</a>
                     </li>
 
-                    <li>
+                    <li class="nav-item">
                         <a href="contato.html">Contato</a>
                     </li>
 
-                    <li>
+                    <li class="nav-item">
                         <a href="sobre.html">Sobre</a>
                     </li>
 
                 </ul>
 
             </nav>
-            
-            <!---->
-
+            <hr>
         </header>
 
         <main>
 
-            <h2>Contato</h2>
-            <p>Os campos com * são de preenchimento obrigatório!</p>
+            <h2 class="title-median">Contato</h2>
+            <p class="contact-text">Os campos com * são de preenchimento obrigatório!</p>
 
             <!--Corpo do Formlario-->
-            <form>
+            <form class="contact">
 
                 <!--Campos do Formulario-->
-                <label>
+                <label class="contact-label">
                     Nome*
-                    <input type="texto" required>
+                    <input class="contact-field" type="texto" required>
                 </label>
 
-                <label>
+                <label class="contact-label">
                     E-mail*
-                    <input type="email" required>
+                    <input class="contact-field" type="email" required>
                 </label>
 
-                <label>
+                <label class="contact-label">
                     Assunto*
-                    <select>
+                    <select class="contact-field">
+                        <option>NewsLetter</option>
                         <option>Dúvidas</option>
                         <option>Sugestões</option>
                         <option>Críticas</option>
                     </select> 
                 </label>
 
-                <label>
+                <label class="contact-label">
                     Mensagem*
-                    <textarea required></textarea>
+                    <textarea class="contact-field"></textarea>
                 </label>
 
-                <button type="button">Enviar</button>
+                <button class="button-form" type="button">Enviar</button>
 
-            </form>
+          </form>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.3383833744801!2d-41.77816947774122!3d-2.9090749002285223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2fe7b0a81c43%3A0x46b78ca8ceae1148!2sSENAI%20Servi%C3%A7o%20Nacional%20de%20Aprendizagem%20Industrial!5e0!3m2!1spt-PT!2sbr!4v1709730612027!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+             <di class="contact-maps">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.3383833744801!2d-41.77816947774122!3d-2.9090749002285223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2fe7b0a81c43%3A0x46b78ca8ceae1148!2sSENAI%20Servi%C3%A7o%20Nacional%20de%20Aprendizagem%20Industrial!5e0!3m2!1spt-PT!2sbr!4v1709730612027!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </di>
         </main>
 
-        <!--Rodape do Site-->
-        <footer>
-
-            <div>
+         <!--Rodape do Site-->
+         <footer class="main-footer">
+            <div class="footer-container">
 
                 <!--Titulo nivel 3-->
-                <h3>Vendas Livres Store - Naveh_Santos 2024</h3>
-                
-                <ul>
+                <h3 class="title-smaller">Vendas Livres Store - Naveh_Santos 2024</h3>
+                <ul class="footer-container"><!--boas praticas,o list-container, codigo igual ao main-footer-->
 
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.facebook.com/" target="_blank">
                             <img src="images/facebook.svg" alt="Facebook logo">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="footer-item" >
                         <a href="https://www.instagram.com/" target="_blank">
                             <img src="images/instagram.svg" alt="instagran logo">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="footer-item" >
                         <a href="https://www.spotfy.com/" target="_blank">
                             <img src="images/spotify.svg" alt="Sporfy logo">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="footer-item" >
                         <a href="https://www.youtube.com/" target="_blank">
                             <img src="images/youtube.svg" alt="Youtube logo">
                         </a>
@@ -137,7 +135,6 @@
             </div>
 
         </footer>
-
     </body>
 
 </html>
