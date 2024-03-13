@@ -1,7 +1,6 @@
 /*importa fonte do google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
 }
 
 body {
-    fonte:400 22px "Roboto",sans-serif;
+    font:400 22px "Roboto",sans-serif;
 }
 
 li {
@@ -130,13 +129,13 @@ margin-bottom: 24px;
 /*contato*/
 .contact-text {
 text-align: center;/*Centralizar o texto*/
-margin-bottom: 30px;/*Separa o paragrafo */
+margin-bottom: 30px;/*Separa o paragrafo do formulario*/
 font-size: 28px;/*altera o tamanho da fonte*/
 color: var(--gray);
 }
 
 .contact {
-    background-color: var(--skyblue);
+    background-color: var(--skyblue);/*Cor do fundo do formulario*/
     padding: 30px;/*Espaçamento*/
     max-width: 600px;/*tamanho definido para o projeto*/
     margin-right: auto;/*Empurra para direita*/
@@ -173,10 +172,11 @@ textarea.contact-field {
 .button-form {
 background-color: var(--blue);/*Cor do fundo do botao*/
 color: var(--white);/*cor da fonte do botao*/
-border: 2px solid var(--blue);
-border-radius: 10px;
-padding: 2px 6px;
-font-weight: bold;
+border: 2px solid var(--blue);/*Adiciona */
+border-radius: 10px;/**/
+padding: 2px 6px;/**/
+font-weight: bold;/**/
+cursor:pointer ;
 }
 .button-form:hover {
     background-color: var(--white);/*Cor do fundo do botao*/
@@ -184,8 +184,43 @@ font-weight: bold;
 }
 
 .contact-maps {
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 20px;
+    width: 600px;/**/
+    margin-right: auto;/**/
+    margin-left: auto;/**/
+    padding-bottom: 20px;/**/
+}
+
+/*Index*/
+
+.title-header {
+font-family: "Madimi One", cursive;/*Utilizar a fonte importada,caso não encontre pega a fonte secudaria*/
+color: var(--blue);/*Troca a cor da fonte*/
+font-size: 38px;/*Aumenta o tamanho da fonte*/
+padding-bottom: 10px;/*Cria espaçamento em baixo*/
+}
+
+.title-large {
+    font-family: "Rock Salt", cursive;/*Utilizar a fonte importada,caso não encontre pega a fonte secudaria*/
+    font-size: 38px;/*Tamanho da fonte*/
+    color: var(--blue);/*Cor da fonte*/
+    text-align: center;/*Cetralizar o texto*/
+}
+
+.description {
+    text-align: center;/*Cetralizar o texto*/
+    color: var(--gray);/*Cor da fonte*/
+    padding-bottom: 10px;/*Cria espaçamento*/
+}
+ 
+.emphasis {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border-radius: 25px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
