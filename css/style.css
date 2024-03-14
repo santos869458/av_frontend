@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body {
+body,button,input {
     font:400 22px "Roboto",sans-serif;
 }
 
@@ -79,7 +79,7 @@ hr {
 .title-median {
 font-family: "Raleway, sans-serif";/*Pega afonte importada, caso ele nao encontre utilizada a sans-serif*/
 font-size: 32px;/*Tamanho da fonte*/
-text-align: center;
+text-align: center;/**/
 text-transform: uppercase;
 margin-bottom: 24px;
 }
@@ -223,4 +223,51 @@ padding-bottom: 10px;/*Cria espaçamento em baixo*/
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
 }
+
+.product {
+    display: flex;/**/
+    flex-direction: column;/**/
+    align-items: center;/**/
+}
+
+.product-title {
+    font-size: 20px;/**/
+    margin-bottom: 6px;/**/
+}
+
+.product-image {
+    width: 320px;/*Travar o tamanho da imagem para colocar 2 produtos por linha,pq o espaço do projeto é 600px*/
+    height: 220px;/*Travar a altura da imagem*/
+    margin-bottom: 20px;/*Aplica um espaço abaixo da imagem*/
+}
+
+.product-price-container {
+    width: 100%;/*Ocupar 100% do espaço disponivel*/
+    display: flex;/*Alinha os elementos na mesma linha*/
+    justify-content: space-between;/**/
+    align-items: center;/**/
+}
+
+.product-price {
+font-family: "Raleway", sans-serif;/**/
+font-size: 20px;
+font-weight: bold;/**/
+
+}
+
+.button-hover {
+background-color: var(--skyblue);/**/
+color: var(--blue);/**/
+border: 2px solid var(--skyblue);/**/
+border-radius: 10px;/**/
+padding: 4px 2px;/**/
+font-weight: bold;/**/
+cursor: pointer;/**/
+}
+.button-hover:hover {
+    background-color: transparent;/**/
+}
+
+
