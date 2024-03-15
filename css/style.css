@@ -270,4 +270,15 @@ cursor: pointer;/**/
     background-color: transparent;/**/
 }
 
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;/*faz com que as bordas se colapsem*/
+}
+
+.table-head-item {
+    text-align: center;
+    border-bottom: 1px solid var(--dargrays);/*adiciona a linha da borda embaixo*/
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
 
